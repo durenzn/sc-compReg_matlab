@@ -1,7 +1,7 @@
 %%step 1, CoupledNMF
 % step 2, subpopulation linking
-load('sample1.mat')
-load('sample2.mat')
+load('./example/sample1.mat')
+load('./example/sample2.mat')
 fileID = fopen('PeakName_intersect.txt');
 C = textscan(fileID,'%s %s');
 fclose(fileID);
@@ -10,9 +10,8 @@ PeakName_intersect=[C{1,1} C{1,2}];
 %load('Opn_bulk.mat')
 Match=subpopulation_link(E1_mean,E2_mean,O1_mean,O2_mean);
 %step 3, compReg
-load('MotifMatch_human_rmdup.mat')
-TFName=intersect(Symbol,unique(Match2(:,2)));
-TF_binding=mfbs(TFName,Element_name,motifName,motifWeight,Match2);
-%load('TFbinding.mat')
+%load('MotifMatch_human_rmdup.mat')
+%TFName=intersect(Symbol,unique(Match2(:,2)));
+%TF_binding=mfbs(TFName,Element_name,motifName,motifWeight,Match2);
+load('./example/TFbinding.mat')
 [diffNet,Hub_TF]=compReg(TF_binding,Match,E1,E1_idx,E2,E2_idx,O1_mean,O2_mean,Symbol,TFName,Element_name,'peak_gene_prior_intersect.bed');
-%analysis
