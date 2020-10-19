@@ -9,3 +9,9 @@ prior/RE_gene_corr_hg19.bed filter=lfs diff=lfs merge=lfs -text
 prior/RE_gene_corr_hg38.bed filter=lfs diff=lfs merge=lfs -text
 prior/RE_gene_corr_mm10.bed filter=lfs diff=lfs merge=lfs -text
 prior/RE_gene_corr_mm9.bed filter=lfs diff=lfs merge=lfs -text
+example/PeakName_intersect.txt filter=lfs diff=lfs merge=lfs -text
+example/PeakName1.txt filter=lfs diff=lfs merge=lfs -text
+example/PeakName2.txt filter=lfs diff=lfs merge=lfs -text
+example/sample1.mat filter=lfs diff=lfs merge=lfs -text
+example/sample2.mat filter=lfs diff=lfs merge=lfs -text
+example/TFbinding.mat filter=lfs diff=lfs merge=lfs -text
