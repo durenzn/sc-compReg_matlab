@@ -1,0 +1,7 @@
+Outdir='/oak/stanford/groups/whwong/group_scratch/zduren/openness/singleCell/10XGenomics/RA/RAd2/CoupledNMF';
+bin_by_cell_count_file='../../10XGenomics/RA/process_atac/RAd2_1_bin_5k_counts.txt';
+bin_name_file='../../10XGenomics/RA/process_atac/genome.5k.bed';
+atac_barcode='../../10XGenomics/RA/process_atac/barcodes_RAd2_1.txt';
+rnaseq_genebycell_folder='../../10XGenomics/RA/RAd2/RNA-seq_outs/filtered_feature_bc_matrix';
+species='mouse';
+K=4;
