@@ -2,7 +2,7 @@
 % step 2, subpopulation linking
 load('./example/sample1.mat')
 load('./example/sample2.mat')
-fileID = fopen('PeakName_intersect.txt');
+fileID = fopen('./example/PeakName_intersect.txt');
 C = textscan(fileID,'%s %s');
 fclose(fileID);
 PeakName_intersect=[C{1,1} C{1,2}];
