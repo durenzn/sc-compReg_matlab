@@ -1,1 +1,11 @@
 prior/Promoter_100k_mm9.bed filter=lfs diff=lfs merge=lfs -text
+prior/all_motif_rmdup filter=lfs diff=lfs merge=lfs -text
+prior/genome_100k_hg38.bed filter=lfs diff=lfs merge=lfs -text
+prior/MotifMatch_human_rmdup.mat filter=lfs diff=lfs merge=lfs -text
+prior/MotifMatch_mouse_rmdup.mat filter=lfs diff=lfs merge=lfs -text
+prior/genome_100k_hg19.bed filter=lfs diff=lfs merge=lfs -text
+prior/Promoter_100k_mm10.bed filter=lfs diff=lfs merge=lfs -text
+prior/RE_gene_corr_hg19.bed filter=lfs diff=lfs merge=lfs -text
+prior/RE_gene_corr_hg38.bed filter=lfs diff=lfs merge=lfs -text
+prior/RE_gene_corr_mm10.bed filter=lfs diff=lfs merge=lfs -text
+prior/RE_gene_corr_mm9.bed filter=lfs diff=lfs merge=lfs -text
