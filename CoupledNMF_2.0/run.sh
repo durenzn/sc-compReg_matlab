@@ -6,4 +6,4 @@
 bash prepare.sh
 cat config code_peakfree.m > run_code.m
 module load matlab
-matlab -nodisplay -nosplash -nodesktop -r "code_peakfree;exit"
+matlab -nodisplay -nosplash -nodesktop -r "run_code;exit"
