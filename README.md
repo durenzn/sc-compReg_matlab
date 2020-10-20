@@ -11,7 +11,7 @@ Run sc-compReg by following two steps:
 
 ### Step 1: get cell label (here we recomend CoupledNMF method)
 
-script
+Please see run.sh under CoupledNMF_2.0 folder
 
 ### Step 2: comparative Regulatory analysis
     1) pre-processing: 
