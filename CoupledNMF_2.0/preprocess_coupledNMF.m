@@ -11,12 +11,10 @@ PeakName=C{1,4};
 opn=[];
 opn_count=[];
 barcode=[];
-for i=1:size(bin_by_cell_count_file,1)
-	a=dlmread(bin_by_cell_count_file{i,1},'\t');
+	a=dlmread(bin_by_cell_count_file,'\t');
 	opn=[opn sparse(a(:,1),a(:,2),log10(1+a(:,3)),length(PeakName),max(a(:,2)))];
 	opn_count=[opn_count sparse(a(:,1),a(:,2),a(:,3),length(PeakName),max(a(:,2)))];
-	barcode=[barcode;importdata(atac_barcode{i,1})];
-end
+	barcode=[barcode;importdata(atac_barcode)];
 Bin_cell_count=sum(opn'>0)';
 Bin_cell_count_z=zscore(log10(1+Bin_cell_count));
 %[d f]=sort(Bin_cell_count,'descend');
@@ -35,13 +33,13 @@ end
 %%%%%%%%%%%%RNA-seq process
 A=[];
 coding=importdata(['protein_coding_gene_',species]);
-for i=1:size(rnaseq_genebycell_folder,1)
-	[E Feature]=getmatrix([rnaseq_genebycell_folder{i,1},'/matrix.mtx'],[rnaseq_genebycell_folder{i,1},'/features.tsv'],3);
+
+	[E Feature]=getmatrix([rnaseq_genebycell_folder,'/matrix.mtx'],[rnaseq_genebycell_folder,'/features.tsv'],3);
 	[d f]=ismember(coding,Feature(:,2));
         E1=zeros(length(coding),size(E,2));
         E1(d,:)=E(f(d==1),:);
 	A=[A E1];
-end
+
 Symbol=coding;
 [d f]=ismember(Symbol,coding);
 Symbol=Symbol(d==1,:);
