@@ -13,5 +13,5 @@ Match=subpopulation_link(E1_mean,E2_mean,O1_mean,O2_mean);
 %load('MotifMatch_human_rmdup.mat')
 %TFName=intersect(Symbol,unique(Match2(:,2)));
 %TF_binding=mfbs(TFName,Element_name,motifName,motifWeight,Match2);
-load('./example/TFbinding.mat')
+load('./example/TFbinding_v2.mat')
 [diffNet,Hub_TF]=compReg(TF_binding,Match,E1,E1_idx,E2,E2_idx,O1_mean,O2_mean,Symbol,TFName,Element_name,'./example/peak_gene_prior_intersect.bed');
