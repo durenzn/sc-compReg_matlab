@@ -1,8 +1,9 @@
 # sc-compReg_matlab
  The comparison of gene regulatory networks between disease versus healthy or between two different treatments is an important scientific problem. We propose sc-compReg as a method for the single cell comparative regulatory analysis based on single cell gene expression (scRNA-seq) and single cell chromatin accessibility data (scATAC-seq) from two different conditions. Our software sc-compReg can be used as a stand-alone package that provides joint clustering and embedding of the cells from both scRNA-seq and scATAC-seq, and construction of differential regulatory networks across two conditions.
 
-## install
-
+## Requirment
+Matlab 2018 or later version; Tested on Linux; The core functions (exclude pre-processing) are also tested on Windowns too.
+The runing time on the example data (full data) is about 30 minuates on a "normal" desktopn computer.
 
 
 ## Run sc-compReg:
