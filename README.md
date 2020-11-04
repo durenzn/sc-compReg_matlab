@@ -3,7 +3,7 @@
 
 ## Requirment
 Matlab 2018 or later version; Tested on Linux; The core functions (exclude pre-processing) are also tested on Windowns too.
-The runing time on the example data (full data) is about 30 minuates on a "normal" desktopn computer.
+The runing time on the example data (full data) is about 30 minuates on a "normal" desktop computer.
 
 
 ## Run sc-compReg:
