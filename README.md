@@ -27,4 +27,6 @@ Please see run.sh under CoupledNMF_2.0 folder
             load('./prior/MotifMatch_human_rmdup.mat')
             TFName=intersect(Symbol,unique(Match2(:,2)));
             TF_binding=mfbs(TFName,Element_name,motifName,motifWeight,Match2);
-
+ ### output
+         Map: linked subpopulation, each row represent one linked subpopulation. First number is the cluster index in sample 1 and the second number represent the cluster index in sample 2.
+         diffNet: cell array diffNet{1,i} represent the diffrential regulatory network of i-th linked subpopulation.
